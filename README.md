@@ -6,7 +6,7 @@ A roguelike poker-slot hybrid game built with Godot Engine
 
 ---
 
-## 🎮 What's Supposed to Happen
+## What's Supposed to Happen
 
 - Select your bet hand (Pair → Four of a Kind)
 - Press S to spin, SPACE to stop reels
@@ -16,7 +16,7 @@ A roguelike poker-slot hybrid game built with Godot Engine
 
 ---
 
-## 🐛 Known Issues
+## Known Issues
 
 - LOCK upgrade is temperamental
 - Boss round can be inconsistent
@@ -25,7 +25,7 @@ A roguelike poker-slot hybrid game built with Godot Engine
 
 ---
 
-## 🎯 Controls
+## Controls
 
 | Key | Action |
 |-----|--------|
@@ -35,7 +35,7 @@ A roguelike poker-slot hybrid game built with Godot Engine
 
 ---
 
-## ⬆️ Upgrades
+## Upgrades
 
 | Upgrade | Effect |
 |---------|--------|
@@ -56,12 +56,12 @@ A roguelike poker-slot hybrid game built with Godot Engine
 
 ---
 
-## 📝 The Story
+## The Story
 
 This was built in a single 6-hour session (5 AM to 10 AM) for a deadline. 
 
 **Things that went wrong:**
-- 100+ bugs discovered at the last minute
+- A lot of bugs discovered at the last minute
 - LOCK upgrade refused to work properly
 - Visuals looked rough
 - Sleep deprivation didn't help
