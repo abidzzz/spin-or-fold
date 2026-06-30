@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://7qre1dfqvce1"]
+
+[ext_resource type="Script" uid="uid://08ytj0vxui1k" path="res://scripts/hud.gd" id="1_ahhtf"]
+
+[node name="HUD" type="CanvasLayer" unique_id=887017779]
+script = ExtResource("1_ahhtf")
+
+[node name="TopBar" type="HBoxContainer" parent="." unique_id=1757421840]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+size_flags_vertical = 0
+
+[node name="GoldLabel" type="Label" parent="TopBar" unique_id=816390322]
+layout_mode = 2
+
+[node name="RoundLabel" type="Label" parent="TopBar" unique_id=1701932372]
+layout_mode = 2
+
+[node name="HandsLabel" type="Label" parent="TopBar" unique_id=1928411042]
+layout_mode = 2
+
+[node name="BetAmountLabel" type="Label" parent="TopBar" unique_id=88387236]
+layout_mode = 2
+
+[node name="StreakLabel" type="Label" parent="." unique_id=443314545]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1.0
+offset_bottom = 23.0
+grow_horizontal = 0
+
+[node name="HandHistory" type="HBoxContainer" parent="." unique_id=1228709162]
+offset_left = 571.0
+offset_top = 8.0
+offset_right = 611.0
+offset_bottom = 48.0
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=754578000]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -264.0
+offset_top = 37.0
+offset_right = 257.0
+offset_bottom = 64.0
+grow_horizontal = 2
+
+[node name="RoundStatus" type="Label" parent="." unique_id=288646237]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="BetSelector" type="HBoxContainer" parent="." unique_id=209016246]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="SpinButton" type="Button" parent="." unique_id=125792830]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = 154.0
+offset_right = 4.0
+offset_bottom = 162.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UpgradeScreen" type="Control" parent="." unique_id=810170457]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect2" type="ColorRect" parent="UpgradeScreen" unique_id=218400797]
+layout_mode = 0
+offset_left = -556.0
+offset_top = -304.0
+offset_right = 606.0
+offset_bottom = 340.0
+color = Color(0.011764706, 0.05882353, 0.11372549, 0.85490197)
+
+[node name="UpgradeOptions" type="VBoxContainer" parent="UpgradeScreen" unique_id=792259301]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UpgradeButton0" type="Button" parent="UpgradeScreen/UpgradeOptions" unique_id=1393790397]
+layout_mode = 2
+
+[node name="UpgradeButton1" type="Button" parent="UpgradeScreen/UpgradeOptions" unique_id=1616170512]
+layout_mode = 2
+
+[node name="UpgradeButton2" type="Button" parent="UpgradeScreen/UpgradeOptions" unique_id=853532820]
+layout_mode = 2
+
+[node name="BossOverlay" type="ColorRect" parent="." unique_id=243059880]
+visible = false
+z_index = 10
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6, 0, 0, 1)
+
+[node name="TransitionOverlay" type="Control" parent="." unique_id=1176056644]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+
+[node name="ColorRect" type="ColorRect" parent="TransitionOverlay" unique_id=1556963205]
+layout_mode = 0
+offset_right = 1162.0
+offset_bottom = 644.0
+color = Color(0.050980393, 0.050980393, 0.050980393, 0.8117647)
+
+[node name="TransitionLabel" type="Label" parent="TransitionOverlay" unique_id=1240605449]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 42

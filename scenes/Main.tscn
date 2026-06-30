@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bxey3e7g5fwh1"]
+
+[ext_resource type="Script" uid="uid://bbeqs12urrvvm" path="res://scripts/main.gd" id="1_elqb8"]
+[ext_resource type="Shader" uid="uid://df655dmxd0ti5" path="res://shader/background.gdshader" id="2_0bbpv"]
+[ext_resource type="Script" uid="uid://cdkptg84va0gr" path="res://scripts/ScreenShake.gd" id="2_rvslj"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rarhs"]
+shader = ExtResource("2_0bbpv")
+shader_parameter/round_number = 1
+shader_parameter/time_scale = 0.04
+shader_parameter/transition = 1.0
+
+[node name="Main" type="Control" unique_id=1417040442]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_elqb8")
+
+[node name="Background" type="ColorRect" parent="." unique_id=364188352]
+material = SubResource("ShaderMaterial_rarhs")
+layout_mode = 0
+offset_right = 1162.0
+offset_bottom = 679.0
+color = Color(0, 0.19372478, 0.3631653, 1)
+
+[node name="ReelContainer" type="HBoxContainer" parent="." unique_id=1170754811]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1662166853]
+position = Vector2(575, 325)
+script = ExtResource("2_rvslj")

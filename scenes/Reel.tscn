@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ci367c0mfsur3"]
+
+[ext_resource type="Script" uid="uid://1u46qrr707l" path="res://scripts/reel.gd" id="1_5kdg0"]
+
+[node name="Reel" type="Node2D" unique_id=442134325]
+script = ExtResource("1_5kdg0")
+
+[node name="ClipRect" type="Control" parent="." unique_id=401864292]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 138.0
+offset_bottom = 198.0
+
+[node name="Strip" type="Node2D" parent="ClipRect" unique_id=1509158235]

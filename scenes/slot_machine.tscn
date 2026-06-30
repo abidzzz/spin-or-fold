@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://casv6yk727kld"]
+
+[ext_resource type="Script" uid="uid://dxfbn0lfu7mxl" path="res://scripts/slot_machine.gd" id="1_xixe3"]
+
+[node name="SlotMachine" type="Node2D" unique_id=314584397]
+script = ExtResource("1_xixe3")
+
+[node name="Reels" type="Node2D" parent="." unique_id=2121503677]
